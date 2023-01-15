@@ -35,8 +35,26 @@
             -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
             filter: grayscale(100%);
         }
-        .shake {
-            transform: translate(1px, 1px) rotate(0deg);
+        .acting {
+            transform:scale(1);
+            transition-delay: 200ms;
+        }
+        .itxt{
+            margin-top: -20px;
+            color: grey;
+            font-size: 18px;
+        }
+        .triggerArea {
+            width: 242px;
+            height: 242px;
+            position: relative;
+        }
+        .triggerArea:hover{
+            background-color: bisque;
+        }
+        .triggerArea:hover .acting {
+            transform: scale(1.8);
+            transition-delay: 200ms;
         }
 
     </style>
@@ -154,10 +172,10 @@
             </p>
             </div>
             <div style="display: grid; grid-template-columns: 242px 242px 242px 242px; grid-template-rows: 242px; row-gap: 125px; column-gap:125px; border-radius: 8px;padding-top: 110px; padding-left: 290px;">
-                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/ribon.png" alt="ribon        "><h1>50</h1><p class="itxt">Award Winnings</p></div>
-                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/projects.png" alt="projects  "><h1>1450</h1><p class="itxt">Projects Completed</p></div>
-                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/customers.png" alt="customers"><h1>509</h1><p class="itxt">client served</p></div>
-                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/email.png" alt="email        "><h1>50,023</h1><p class="itxt">emails sent</p></div>
+                <div class="triggerArea" style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img class="acting" src="images/icons/ribon.png" alt="ribon        "><h1>50</h1><p class="itxt">Award Winnings</p></div>
+                <div class="triggerArea" style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img class="acting" src="images/icons/projects.png" alt="projects  "><h1>1450</h1><p class="itxt">Projects Completed</p></div>
+                <div class="triggerArea" style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img class="acting" src="images/icons/customers.png" alt="customers"><h1>509</h1><p class="itxt">client served</p></div>
+                <div class="triggerArea" style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img class="acting" src="images/icons/email.png" alt="email        "><h1>50,023</h1><p class="itxt">emails sent</p></div>
             </div>
 
         </div>
