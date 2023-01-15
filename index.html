@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2 Landing Page: G3 Architects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .container{
             width: 1920px;
@@ -29,6 +30,13 @@
         /* Make a Special Div */
         div.inline { 
             float:left;
+        }
+        .imgBW {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+        .shake {
+            transform: translate(1px, 1px) rotate(0deg);
         }
 
     </style>
@@ -135,6 +143,64 @@
             </div>
 
         </div>
+
+        <!-- Section 4 -->
+        <div class="container" style="height:640px; align-items:baseline; justify-content: center;">
+            <div style="width: 537px; height: 200px; text-align: left; padding-left: 240px;">
+                <p style="font-weight: bold; font-size: 44px;">Some Facts</p>
+                <p style="font-size: 18px; margin-top: -30px; color: grey;">By dint of building well, you get to be a good architect. 
+                Beauty perishes in life, but is immortal in art. Architecture should speak of its time and place, 
+                but yearn for timelessness. form follows function," rather "form follows beauty"
+            </p>
+            </div>
+            <div style="display: grid; grid-template-columns: 242px 242px 242px 242px; grid-template-rows: 242px; row-gap: 125px; column-gap:125px; border-radius: 8px;padding-top: 110px; padding-left: 290px;">
+                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/ribon.png" alt="ribon        "><h1>50</h1><p class="itxt">Award Winnings</p></div>
+                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/projects.png" alt="projects  "><h1>1450</h1><p class="itxt">Projects Completed</p></div>
+                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/customers.png" alt="customers"><h1>509</h1><p class="itxt">client served</p></div>
+                <div style="border-style: solid; border-color: coral; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"><img src="images/icons/email.png" alt="email        "><h1>50,023</h1><p class="itxt">emails sent</p></div>
+            </div>
+
+        </div>
+
+        <!-- Section 5 -->
+        <div class="container" style="height:640px; flex-direction: column; align-items:baseline; justify-content: center;">
+            <div style="width: 800px; height: 200px; text-align: center; padding-left: 450px;">
+                <p style="font-weight: bold; font-size: 44px;">Our Sponsors</p>
+                <p style="font-size: 18px; margin-top: -30px; color: grey;">By dint of building well, you get to be a good architect. 
+                Beauty perishes in life, but is immortal in art. Architecture should speak of its time and place, 
+                but yearn for timelessness. form follows function," rather "form follows beauty"
+            </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 50px 50px 50px 50px 50px; grid-template-rows: 160px; row-gap: 160px; column-gap: 200px; padding-top: 110px; padding-left: 240px;">
+                <div><img class="imgBW" src="images/sponsors/amazon.png" alt="Amazon"></div>
+                <div><img class="imgBW" src="images/sponsors/google.png" alt="Google"></div>
+                <div><img class="imgBW" src="images/sponsors/spotify.png" alt="Spotify"></div>
+                <div><img class="imgBW" src="images/sponsors/telerama.png" alt="Telerama"></div>
+                <div><img class="imgBW" src="images/sponsors/figma.png" alt="Figma"></div>
+            </div>
+
+        </div>
+
+        <!-- Section Extra -->
+
+        <div class="container" style="height:700px; flex-direction: row; align-items:center;">
+            <div style="padding-left: 240px">
+                <img src="images/istockphoto-700603482-1024x1024.jpg" alt="ArchBanner">
+            </div>
+            <div style="width: 180px; height: 700px;">
+                <h1 style="font-size:64px; padding-top:200px">Let's Build Our Future</h1>
+            </div>
+
+        </div>
+
+        <!-- Section: Footer -->
+        <div style="padding-left: 240px;">
+            <div style="width: 1440px; height: 100px; background-color: rgb(255, 244, 231); text-align: center;">
+                <p style="padding-top: 50px; font-size: medium; word-spacing: 20px; letter-spacing: 3px;">All rights reserved copyright@2023 Startup Landing Page design</p>
+            </div>
+        </div>
+
 
 </body>
 </html>
